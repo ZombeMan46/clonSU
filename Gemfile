@@ -37,7 +37,7 @@ gem 'font-awesome-rails'
 
 gem "jquery-rails"
 gem 'popper_js'
-
+gem 'devise'
 
 
 # Use Capistrano for deployment

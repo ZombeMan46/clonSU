@@ -20,21 +20,10 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h1>Dobrodošlji v šolsko leto: 2019/2020 </h1>
-				<p>Račun: 
-				<?php if(isset($_SESSION['userData']['email']))
-				{
-				echo $_SESSION['userData']['email'];
-				}
-				elseif(isset($_SESSION['username']))
-					{
-						echo $_SESSION['username'];
-				}
-				else
-				{
-					echo "Niste prijavljeni";
-				}
-				?>
-				
+				<p>
+					Račun:
+					  <strong><%= current_user.email %></strong>.
+
 				</p>
 			</section>
 			<a class="weatherwidget-io" href="https://forecast7.com/en/46d3615d11/velenje/" data-label_1="VELENJE" data-label_2="WEATHER" data-theme="original" >VELENJE WEATHER</a>
@@ -51,7 +40,7 @@
 							</header>
 							<p>Klikni na gumb "več", da izveš pri katerih predmetih sodeluješ.</p>
 							<footer>
-								<a href="mojipredmeti.php" class="button special">More</a>
+								<a href="mojprofil.php" class="button special">More</a>
 							</footer>
 						</article>
 						<article>
@@ -60,7 +49,8 @@
 							</header>
 							<p>Klikni "Več" ter stran te bo popeljala do urejevalnika profila, tu lahko urediš svoje geslo, sliko, ...  </p>
 							<footer>
-								<a href="mojprofil.php" class="button special">More</a>
+									<%= link_to 'Edit profile' , edit_user_registration_path, :class => 'button special' %>
+							
 							</footer>
 						</article>
 						<article>
@@ -155,13 +145,13 @@
 					</div>
 				</div>
 			</section>
-		--> 
+		-->
 
-	<?php	
+	<?php
    include_once 'footer.php'
    ?>
 
-   
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -172,5 +162,5 @@
 </html>
 <%= render "layouts/header" %>
 <%=yield %>
-<%= render "layouts/footer" %>                 
+<%= render "layouts/footer" %>
     </html>
