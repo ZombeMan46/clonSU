@@ -11,7 +11,7 @@ gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,6 +38,9 @@ gem 'font-awesome-rails'
 gem "jquery-rails"
 gem 'popper_js'
 gem 'devise'
+
+#adctive administratorju
+gem 'activeadmin'
 
 
 # Use Capistrano for deployment
