@@ -9,7 +9,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.12.4'
 # Use SCSS for stylesheets
@@ -42,7 +42,13 @@ gem 'devise'
 #adctive administratorju
 gem 'activeadmin'
 
+#heroku
+gem 'pg' #, group: :production # in case of using another db for development
+#gem 'unicorn'
+#gem 'rails_12factor', group: :production
 
+#za file upload gem
+gem 'carrierwave', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
