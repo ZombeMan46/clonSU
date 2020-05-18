@@ -105,6 +105,31 @@
 				</div>
 			</section>
 
+
+
+
+
+			<% if !@resume.errors.empty? %>
+			   <div class = "alert alert-error">
+
+			      <ul>
+			         <% @resume.errors.full_messages.each do |msg| %>
+			            <li><%= msg %></li>
+			         <% end %>
+			      </ul>
+
+			   </div>
+			<% end %>
+
+			<div class = "well">
+			   <%= form_for @resume, html: { multipart: true } do |f| %>
+			      <%= f.label :name %>
+			      <%= f.text_field :name %>
+			      <%= f.label :attachment %>
+			      <%= f.file_field :attachment %>
+			      <%= f.submit "Save", class: "btn btn-primary" %>
+			   <% end %>
+			</div>
 		<!-- Three -->
 		<!--
 			<section id="three" class="wrapper special">
@@ -143,10 +168,6 @@
 			</section>
 		-->
 
-	<?php
-   include_once 'footer.php'
-   ?>
-
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -159,4 +180,3 @@
 <%= render "layouts/header" %>
 <%=yield %>
 <%= render "layouts/footer" %>
-    </html>
