@@ -19,17 +19,21 @@ Rails.application.routes.draw do
 #     mount_uploader :attachment, AttachmentUploader # Tells rails to use this uploader for this model.
 #     validates :name, presence: true # Make sure the owner's name is present.
 #  end
+
+
+
+
+
+end
+
 CarrierWaveExample::Application.routes.draw do
    resources :resumes, only: [:index, :new, :create, :destroy]
    root "resumes#index"
 end
 
-  #celendar
-  module CalendarHelper
-   def calendar(date = Date.today, &block)
-      Calendar.new(self, date, block).table
-    end
+#celendar
+module CalendarHelper
+ def calendar(date = Date.today, &block)
+    Calendar.new(self, date, block).table
   end
-
-
 end
