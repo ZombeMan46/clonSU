@@ -49,6 +49,7 @@ gem 'pg' #, group: :production # in case of using another db for development
 
 #za file upload gem
 gem 'carrierwave', '~> 2.0'
+gem 'foreman'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
