@@ -1,7 +1,7 @@
 # Šolska učilnica clon
 This is a school project in Ruby on rails. I was trying to replicate our online class courses.
 
-Activeadmin(What would teacer see):
+Activeadmin(What would teacher see):
 ![alt text](https://github.com/ZombeMan46/clonSU/blob/master/app/assets/images/active.png)
 
 On this website we can:
