@@ -6,6 +6,8 @@
           <%= link_to "Spletna učiulnica", root_path, :class => "logo" %>
 					<nav id="nav">
             <% if user_signed_in? %>
+            <%= link_to 'resume', resumes_path, :class => 'nabar-link' %>
+            <%= link_to 'Celendar', CalendarExample
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
             <% else %>
