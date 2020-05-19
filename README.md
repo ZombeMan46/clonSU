@@ -15,6 +15,7 @@ To do:
 - Make modules so teachers can assign work and add students
 - Better style
 - Teacher invites to courses
+
 All the gems are present inside the GemFile, and all you need to do is run bundle install.
 
 Main page:
