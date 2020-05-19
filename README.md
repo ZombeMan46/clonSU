@@ -1,13 +1,17 @@
 # Šolska učilnica clon
+This is a school project in Ruby on rails. I was trying to replicate our online class courses.
 
-Login/register(za admina)
+Activeadmin(What would teacer see):
 ![alt text](https://github.com/ZombeMan46/clonSU/blob/master/app/assets/images/active.png)
 
-Na tej strani lahko:
-- Naredimo račun, se prijavimo,
-- Spremenimo email ter geslo,
-- Če pozabimo geslo, nam sistem pošlje link za obnovo,
-- File upload za modul,
-- Učitelj sign in, narejen z activeadmin
+On this website we can:
+- Create an account, login with existing account
+- Change our email and password,
+- Request "forgoten password" that sends us recovery email,
+- Upload files (not working atm.),
+- Professor sign in.
 
+All the gems are present inside the GemFile, and all you need to do is run bundle install.
+
+Main page:
 ![alt text](https://github.com/ZombeMan46/clonSU/blob/master/app/assets/images/index.png)
