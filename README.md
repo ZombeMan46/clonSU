@@ -1,24 +1,12 @@
-# README
+# Šolska učilnica clon
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Login/register(za admina)
 
-Things you may want to cover:
 
-* Ruby version
+Na tej strani lahko:
+- Naredimo račun, se prijavimo,
+- Spremenimo email ter geslo
+- Če pozabimo geslo, nam ssitem pošlje link za obnovo
+- File upload za modul,
+- Učitelj sign in, narejen z activeadmin
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
